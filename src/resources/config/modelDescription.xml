@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<fmiModelDescription
+    fmiVersion="2.0"
+    modelName="no.sintef.dds-fmu"
+    description="DDS-FMI inter-communication"
+    author="Joakim Haugen and Stian Skjong"
+    copyright="2023 SINTEF Ocean"
+    license="BSD-3-Clause"
+    version="0.5.1"
+    variableNamingConvention="structured"
+    guid="this-is-a-placeholder-for-uuid36char"
+    >
+
+    <CoSimulation
+        modelIdentifier="dds-fmu"
+        canHandleVariableCommunicationStepSize="true"
+        canNotUseMemoryManagementFunctions="true"
+        />
+
+    <DefaultExperiment
+        startTime="0"
+        stopTime="1"
+        tolerance="1e-3"
+        stepSize="0.1"
+        />
+
+</fmiModelDescription>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fmiModelDescription fmiVersion="2.0" modelName="no.sintef.dds-fmu" description="DDS-FMI inter-communication" author="Joakim Haugen and Stian Skjong" copyright="2023 SINTEF Ocean" license="BSD-3-Clause" version="0.5.1" variableNamingConvention="structured" guid="cb7c3a38-3f01-53cb-8d77-b67633654fc9">
+	<CoSimulation modelIdentifier="dds-fmu" canHandleVariableCommunicationStepSize="true" canNotUseMemoryManagementFunctions="true"/>
+	<DefaultExperiment startTime="0" stopTime="1" tolerance="1e-3" stepSize="0.1"/>
+	<ModelVariables>
+		<ScalarVariable name="sub.Roundtrip.value" valueReference="0" variability="discrete" causality="output" initial="exact">
+			<Real start="0.0"/>
+		</ScalarVariable>
+		<ScalarVariable name="sub.Roundtrip.my_key" valueReference="0" variability="discrete" causality="output" initial="exact">
+			<Integer start="0"/>
+		</ScalarVariable>
+		<ScalarVariable name="sub.Roundtrip.is_pos" valueReference="0" variability="discrete" causality="output" initial="exact">
+			<Boolean start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="sub.Roundtrip.my_enum" valueReference="1" variability="discrete" causality="output" initial="exact">
+			<Integer start="0"/>
+		</ScalarVariable>
+		<ScalarVariable name="pub.Roundtrip.value" valueReference="1" variability="discrete" causality="input">
+			<Real start="0.0"/>
+		</ScalarVariable>
+		<ScalarVariable name="pub.Roundtrip.my_key" valueReference="2" variability="discrete" causality="input">
+			<Integer start="0"/>
+		</ScalarVariable>
+		<ScalarVariable name="pub.Roundtrip.is_pos" valueReference="1" variability="discrete" causality="input">
+			<Boolean start="false"/>
+		</ScalarVariable>
+		<ScalarVariable name="pub.Roundtrip.my_enum" valueReference="3" variability="discrete" causality="input">
+			<Integer start="0"/>
+		</ScalarVariable>
+		<ScalarVariable name="key.sub.Roundtrip.my_key" valueReference="4" variability="fixed" causality="parameter" initial="exact">
+			<Integer start="0"/>
+		</ScalarVariable>
+	</ModelVariables>
+	<ModelStructure>
+		<Outputs>
+			<Unknown index="1"/>
+			<Unknown index="2"/>
+			<Unknown index="3"/>
+			<Unknown index="4"/>
+		</Outputs>
+	</ModelStructure>
+</fmiModelDescription>
+

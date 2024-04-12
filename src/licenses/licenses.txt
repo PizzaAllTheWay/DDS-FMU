@@ -1,0 +1,17 @@
+Licenses for dds-fmu and dependencies are listed below.
+dds-fmu: MPL-2.0
+
+asio: BSL-1.0
+cpp-peglib: MIT
+cppfmu: MPL-2.0
+fast-cdr: Apache-2.0
+fast-dds: Apache-2.0
+fmi2: BSD-2-Clause
+foonathan-memory: Zlib
+kuba-zip: Unlicense
+ms-gsl: MIT
+rapidxml: ['BSL-1.0', 'MIT']
+stduuid: MIT
+taywee-args: MIT
+tinyxml2: Zlib
+xtypes: Apache-2.0
