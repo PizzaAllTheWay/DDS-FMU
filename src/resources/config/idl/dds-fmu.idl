@@ -21,10 +21,10 @@ module idl {
   */
   struct MyCustomSignalStructure {
     boolean my_state;
-    uint16 my_value;
-    double my_percentage;
-    char my_letter;
-    string my_text;
+    // uint16 my_value;
+    // double my_percentage;
+    // char my_letter;
+    // string my_text;
   };
 
   /**
