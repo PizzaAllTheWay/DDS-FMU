@@ -36,7 +36,9 @@ $ cyclonedds ls
 ```
 
 Undernearh you should see a square subsection that says:
+
 | Typename       │ <Name of your custom topic>  │
+
 │ XTypes Type ID │ <DDS ID, for us it is unset> |
 
 If you 
