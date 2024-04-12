@@ -21,7 +21,7 @@ You have to have a simulation platform for this part. I recomend OSP if you just
 Compile the FMU, upload it on the STC platform and run the simulation localy, you should now start to see that the FMU is runing and binded with DDS :)
 
 
-# Interfaceing 
+# Interfacing 
 Now that we have everything working we can start interfaceing with our DDS-FMU and by that extention other FMUs that conect and use our DDS-FMU information/data
 To start you will have to use "cyclonedds-python" library, which is a good library in python to interface with DDS, this python library also provides us with tolls to analyze, send, receive and troubleshoot DDS. You can find the "cyclonedds-python" library in this github repository. Navigate to there and follow the instalation guide, to sum it upp you have to run:
 
@@ -29,5 +29,15 @@ To start you will have to use "cyclonedds-python" library, which is a good libra
 $ pip install cyclonedds
 ```
 
+Now once installed, double check that you are still runing the DDS-FMU simulation on STC. Once you are runing STC simulation you can simply check if your DDS FMU has binded with ypur custom topic, our topic for this showcase is "idl::MyCustomSignalStructure". Check if your custom topic is running by writing:
 
+```
+$ cyclonedds ls
+```
+
+Undernearh you should see a square subsection that says:
+| Typename       │ <Name of your custom topic>  │
+│ XTypes Type ID │ <DDS ID, for us it is unset> |
+
+If you 
 
