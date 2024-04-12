@@ -7,7 +7,10 @@ You mainly want to eddit these files:
 Read up on the src/documentation/ folder to get a better grasp of how to use and manipulate the code
 
 Once you are done and satisfied with the result, compile the whole src into a .fmu file using this shel scrips:
-```$ ./compile_fmu.sh```
+
+```
+$ ./compile_fmu.sh
+```
 
 Now you should see that all the changes that you have made in the code reflect in the "dds-fmu.fmu" file
 
@@ -21,5 +24,10 @@ Compile the FMU, upload it on the STC platform and run the simulation localy, yo
 # Interfaceing 
 Now that we have everything working we can start interfaceing with our DDS-FMU and by that extention other FMUs that conect and use our DDS-FMU information/data
 To start you will have to use "cyclonedds-python" library, which is a good library in python to interface with DDS, this python library also provides us with tolls to analyze, send, receive and troubleshoot DDS. You can find the "cyclonedds-python" library in this github repository. Navigate to there and follow the instalation guide, to sum it upp you have to run:
+
+```
+$ pip install cyclonedds
+```
+
 
 
