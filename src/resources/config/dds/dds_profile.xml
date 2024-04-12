@@ -18,6 +18,14 @@
     </builtin-->
   </participant>
 
+
+
+  <!-- 
+    Note: The profile_name="dds-fmu-default" is kept here for a reason
+    Down below you will us making custom messages publish/subscriber to bind DDS with FMU with those specific topics
+    However, in case of failure of atemp didn't suceed or runtime error, this profile_name="dds-fmu-default" provides us with fallback
+    profile_name="dds-fmu-default" is a preprogramed DDS topic for thsi FMU, and so worst case scenario it willdefault to comuniacting between FMU and DDS with profile_name="dds-fmu-default"
+  -->
   <publisher profile_name="dds-fmu-default">
     <qos>
       <durability>
@@ -40,6 +48,35 @@
     </qos>
   </subscriber>
 
+  <!-- 
+    Here we atempt to bind our custom DDS topic from the FMU
+  -->
+
+  <topic profile_name="MyCustomDDSFMUTopic" />
+
+  <data_writer profile_name="MyCustomDDSFMUTopic">
+    <qos>
+      <reliability>
+        <kind>RELIABLE</kind>
+      </reliability>
+    </qos>
+  </data_writer>
+
+  <data_reader profile_name="MyCustomDDSFMUTopic">
+    <qos>
+      <reliability>
+        <kind>RELIABLE</kind>
+      </reliability>
+    </qos>
+  </data_reader>
+
+
+
+  <!-- 
+    Comented the profile_name="Roundtrip" as we nowonly want to publish and subscribe to our own custom DDS topic and bind that
+  -->
+
+  <!-- 
   <topic profile_name="Roundtrip" />
 
   <data_writer profile_name="Roundtrip">
@@ -56,9 +93,12 @@
         <kind>RELIABLE</kind>
       </reliability>
     </qos>
-  </data_reader>
-</profiles>
+  </data_reader> 
+  -->
 
+
+
+</profiles> 
 <log>
   <!-- dds-fmu implements a custom LogConsumer to output fast-dds logs to FMI -->
 </log>

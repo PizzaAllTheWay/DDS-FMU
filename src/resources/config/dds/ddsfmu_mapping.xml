@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ddsfmu>
-  <fmu_in topic="Roundtrip" type="idl::Signal" />
-  <fmu_out topic="Roundtrip" type="idl::Signal" key_filter="true" />
+  <!-- 
+    My custom Inputs and outputs of teh FMU
+    define the topic name DDS should have and type of data structure you want your FMU have
+  -->
+  <fmu_in topic="MyCustomDDSFMUTopic" type="idl::MyCustomSignalStructure"/>
+  <fmu_out topic="MyCustomDDSFMUTopic" type="idl::MyCustomSignalStructure"/>
+
+  
+
+  <!-- Comented out Signal since I only want my data structure to be available in the FMU -->
+  <!-- <fmu_in topic="Roundtrip" type="idl::Signal" />
+  <fmu_out topic="Roundtrip" type="idl::Signal" key_filter="true" /> -->
 </ddsfmu>

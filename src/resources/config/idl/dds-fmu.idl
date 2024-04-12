@@ -3,6 +3,31 @@
 */
 module idl {
   /**
+     My custom structure to conatin data
+     just a simple example on how the my data structure would look like
+     All the data types are basically simple c++ data types
+     boolean
+     uint16
+     double
+     char
+     string
+
+     OBS!!!!!!!
+     For some god uknown reason 
+     char8 and char16 DONT WORK!???
+     In documentation they say it works, but parsing them causes errror, 
+     Solution: use "char" instead, no 8 or 16, just char
+     it is what it is lol...
+  */
+  struct MyCustomSignalStructure {
+    boolean my_state;
+    uint16 my_value;
+    double my_percentage;
+    char my_letter;
+    string my_text;
+  };
+
+  /**
      @brief Struct to contain trigonometric values
   */
   struct Trigonometry {

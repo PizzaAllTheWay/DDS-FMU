@@ -4,13 +4,20 @@
     fmiVersion="2.0"
     modelName="dds-communication"
     description="DDS-FMI allows comunication and interaction with other FMUs using DDS, meaning any system or computer using DDS can interface and control these FMUs"
-    author="Joakim Haugen and Stian Skjong"
-    copyright="2023 SINTEF Ocean"
-    license="BSD-3-Clause"
-    version="0.5.1"
+    author="Martynas Smilingis"
+    copyright="DNV"
+    license="MIT"
+    version="0.5.1" 
     variableNamingConvention="structured"
     guid="this-is-a-placeholder-for-uuid36char"
     >
+    <!-- 
+        OBS!!!
+        For some reason 
+        fmiVersion="2.0" and version="0.5.1" must be like that
+        if one changes the version numbers the fmi compiles correctly
+        however it breaks when using it, so just keep the versions as is, cursed X-X
+    -->
 
     <CoSimulation
         modelIdentifier="dds-fmu"
