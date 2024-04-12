@@ -2,8 +2,8 @@
 
 <fmiModelDescription
     fmiVersion="2.0"
-    modelName="no.sintef.dds-fmu"
-    description="DDS-FMI inter-communication"
+    modelName="dds-communication"
+    description="DDS-FMI allows comunication and interaction with other FMUs using DDS, meaning any system or computer using DDS can interface and control these FMUs"
     author="Joakim Haugen and Stian Skjong"
     copyright="2023 SINTEF Ocean"
     license="BSD-3-Clause"
