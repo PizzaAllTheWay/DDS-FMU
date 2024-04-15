@@ -4,8 +4,8 @@
     My custom Inputs and outputs of teh FMU
     define the topic name DDS should have and type of data structure you want your FMU have
   -->
-  <fmu_in topic="MyCustomDDSFMUTopicInput" type="idl::MyCustomSignalStructure"/>
-  <fmu_out topic="MyCustomDDSFMUTopicOutput" type="idl::MyCustomSignalStructure"/>
+  <fmu_in topic="MyCustomDDSFMUTopicInput" type="idl::MyCustomSignalStructureInput"/>
+  <fmu_out topic="MyCustomDDSFMUTopicOutput" type="idl::MyCustomSignalStructureOutput"/>
 
   
 

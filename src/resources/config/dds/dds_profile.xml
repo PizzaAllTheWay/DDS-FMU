@@ -73,7 +73,7 @@
 
 
   <!-- 
-    Comented the profile_name="Roundtrip" as we nowonly want to publish and subscribe to our own custom DDS topic and bind that
+    Comented the profile_name="Roundtrip" as we now only want to publish and subscribe to our own custom DDS topic and bind that
   -->
 
   <!-- 

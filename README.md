@@ -27,6 +27,7 @@ $ ./ospsim --api_server_url https://dnvgl-osp-api.azurewebsites.net --simulator_
 
 
 # DDS Setup
+#### NOTE BEFORE RUNING THIS PART, Run the ./compile_fmu.sh, this is so that the datastructure of the FMU is updated and moved tothe correct location, ie out DDS FMU interface
 Now that we have everything working we can start interfaceing with our DDS-FMU and by that extention other FMUs that conect and use our DDS-FMU information/data
 To start you will have to use "cyclonedds-python" library, which is a good library in python to interface with DDS, this python library also provides us with tolls to analyze, send, receive and troubleshoot DDS. You can find the "cyclonedds-python" library in this github repository. Navigate to there and follow the instalation guide, to sum it upp you have to run:
 
