@@ -71,7 +71,7 @@ Now just run the interface code like this:
 
 ```
 $ cd dds-fmu-interface
-$ python3 dds-fmu-interface.py
+$ python3 ddsFmuInterface.py
 ```
 
 After that try changing in the STC interface the Inputs (These would be something that DDS-FMU would get from other FMUs and send back to DDS as its input, like some simulated data like simulated hull dynamics position or simulated IMU or GNSS data)
