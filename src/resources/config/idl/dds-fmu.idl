@@ -7,7 +7,7 @@ module idl {
      just a simple example on how the my data structure would look like
      All the data types are basically simple c++ data types
      boolean
-     int16
+     int32
      double
      char
      string
@@ -20,14 +20,14 @@ module idl {
      it is what it is lol...
   */
   struct MyCustomSignalStructureInput {
-    int8 fmu_output_value;
+    uint32 fmu_output_value;
   };
   struct MyCustomSignalStructureOutput {
     boolean my_state;
-    // uint16 my_value;
-    // double my_percentage;
-    // char my_letter;
-    // string my_text;
+    int32 my_value;
+    double my_percentage;
+    char my_letter;
+    string my_text;
   };
   
   /*

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fmiModelDescription fmiVersion="2.0" modelName="dds-communication" description="DDS-FMI allows comunication and interaction with other FMUs using DDS, meaning any system or computer using DDS can interface and control these FMUs" author="Martynas Smilingis" copyright="DNV" license="MIT" version="0.5.1" variableNamingConvention="structured" guid="c98a6bf9-5d63-5c54-9c91-d4bccc7674ff">
+<fmiModelDescription fmiVersion="2.0" modelName="dds-communication" description="DDS-FMI allows comunication and interaction with other FMUs using DDS, meaning any system or computer using DDS can interface and control these FMUs" author="Martynas Smilingis" copyright="DNV" license="MIT" version="0.5.1" variableNamingConvention="structured" guid="958d0c9b-ffac-5d68-bd1f-9452ddf3b8c7">
 	<!-- 
         OBS!!!
         For some reason 
@@ -13,13 +13,29 @@
 		<ScalarVariable name="sub.MyCustomDDSFMUTopicOutput.my_state" valueReference="0" variability="discrete" causality="output" initial="exact">
 			<Boolean start="false"/>
 		</ScalarVariable>
-		<ScalarVariable name="pub.MyCustomDDSFMUTopicInput.fmu_output_value" valueReference="0" variability="discrete" causality="input">
+		<ScalarVariable name="sub.MyCustomDDSFMUTopicOutput.my_value" valueReference="0" variability="discrete" causality="output" initial="exact">
 			<Integer start="0"/>
+		</ScalarVariable>
+		<ScalarVariable name="sub.MyCustomDDSFMUTopicOutput.my_percentage" valueReference="0" variability="discrete" causality="output" initial="exact">
+			<Real start="0.0"/>
+		</ScalarVariable>
+		<ScalarVariable name="sub.MyCustomDDSFMUTopicOutput.my_letter" valueReference="0" variability="discrete" causality="output" initial="exact">
+			<String start=""/>
+		</ScalarVariable>
+		<ScalarVariable name="sub.MyCustomDDSFMUTopicOutput.my_text" valueReference="1" variability="discrete" causality="output" initial="exact">
+			<String start=""/>
+		</ScalarVariable>
+		<ScalarVariable name="pub.MyCustomDDSFMUTopicInput.fmu_output_value" valueReference="1" variability="discrete" causality="input">
+			<Real start="0.0"/>
 		</ScalarVariable>
 	</ModelVariables>
 	<ModelStructure>
 		<Outputs>
 			<Unknown index="1"/>
+			<Unknown index="2"/>
+			<Unknown index="3"/>
+			<Unknown index="4"/>
+			<Unknown index="5"/>
 		</Outputs>
 	</ModelStructure>
 </fmiModelDescription>
