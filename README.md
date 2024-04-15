@@ -1,3 +1,9 @@
+# Prerequisites
+
+```
+$ pip install cyclonedds
+```
+
 # Makeing an DDS-FMU
 You can start work on the dds-fmu in the src/ folder
 You mainly want to eddit these files:
