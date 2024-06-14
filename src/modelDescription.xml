@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fmiModelDescription fmiVersion="2.0" modelName="dds-communication" description="DDS-FMI allows comunication and interaction with other FMUs using DDS, meaning any system or computer using DDS can interface and control these FMUs" author="Martynas Smilingis" copyright="DNV" license="MIT" version="0.5.1" variableNamingConvention="structured" guid="958d0c9b-ffac-5d68-bd1f-9452ddf3b8c7">
+<fmiModelDescription fmiVersion="2.0" modelName="dds-communication" description="DDS-FMI allows comunication and interaction with other FMUs using DDS, meaning any system or computer using DDS can interface and control these FMUs" author="Martynas Smilingis" copyright="DNV" license="MIT" version="0.5.1" variableNamingConvention="structured" guid="9f9ca8a0-6889-5da8-8337-aef428780135">
 	<!-- 
         OBS!!!
         For some reason 
